@@ -12,7 +12,7 @@ The container can be used interactively with "docker run -it"
 `docker run -it --network=host  flosic-container /bin/bash`
 
 
-Once entering an interactive Docker environment, run the command below to activate the mpi module
+Once entering an interactive Docker environment, run the command below to activate the mpi module if not already loaded
 
 `module load mpi`
 
