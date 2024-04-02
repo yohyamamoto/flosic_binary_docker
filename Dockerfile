@@ -9,10 +9,10 @@ RUN echo "fortran ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 RUN useradd --no-log-init --home-dir /home/$USERNAME --create-home --shell /bin/bash $USERNAME
 RUN usermod -aG wheel $USERNAME 
 
-COPY flosic_exe          /home/$USERNAME/
+COPY flosic_exe         /home/$USERNAME/
 COPY examples           /home/$USERNAME/examples
 COPY basis              /home/$USERNAME/basis
-COPY README             /home/$USERNAME/
+COPY README.md          /home/$USERNAME/
 
 RUN echo "module load mpi" >> /home/$USERNAME/.bashrc
 #RUN echo "module load mpi" >> /home/$USERNAME/bashenv
