@@ -1,5 +1,5 @@
 # flosic_binary_docker
-This repository contains a binary flosic, Dockerfile, a basis set directory, and an example directory.
+This repository contains a binary flosic (built with linux-amd64), Dockerfile, a basis set directory, and an example directory.
 
 
 To building a container, simply run
